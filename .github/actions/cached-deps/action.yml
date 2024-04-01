@@ -9,6 +9,6 @@ runs:
   using: 'composite'
   steps:
       - name: Cache dependencies
-        if: ${{ input.caching == 'true' }}
+        if: ${{ inputs.caching == 'true' }}
         run: npm ci
         shell: bash
